@@ -1,0 +1,159 @@
+<div style="padding-bottom:50px">
+
+  <div class="py-3 text-center">
+    <div>
+      <div style="display:inline">
+        <img src="../../assets/freshchat-icon.jpg" style="height:80px" />
+      </div>
+      <div style="font-weight: 500;font-size: 2rem">
+        Chat Feedback
+      </div>
+    </div>
+    <p class="lead">Please enter your recently resolved chat info along with the feedback accurately.</p>
+  </div>
+
+  <form class="needs-validation" novalidate>
+
+    <div class="row">
+      <div class="col-md-6 mb-3 form-group">
+        <label for="Date">Date (YYYY-MM-DD)</label>
+        <input type="text" [(ngModel)]="feedbackObject.TimeStamp" class="form-control" id="Date" placeholder="YYYY-MM-DD" name="date" required>
+        <div class="invalid-feedback">
+          Invalid Date. Valid date format : YYYY-MM-DD
+        </div>
+      </div>
+      <div class="col-md-6 mb-3 form-group">
+        <label for="product">Product</label>
+        <select class="form-control" id="product" [(ngModel)]="feedbackObject.Product" name="product" placeholder="Select Product">
+          <option>Azure Web App (Windows)</option>
+          <option>Azure Web App (Linux)</option>
+          <option>Azure Kubernetes Service</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 mb-3 form-group">
+        <label for="resourceUri">Azure Resource Uri</label>
+        <input type="text"  [(ngModel)]="feedbackObject.ResourceURI" class="form-control" id="resourceUri" placeholder="/subscriptions/1402b..../resourceGroups/..."
+          name="resourceUri">
+        <div class="invalid-feedback">
+          Valid Resoiurce Uri is required.
+        </div>
+      </div>
+      <div class="col-md-6 mb-3 form-group">
+        <label for="freshChatUri">Fresh Chat Uri</label>
+        <input type="text" [(ngModel)]="feedbackObject.ChatURL" class="form-control" id="freshChatUri" placeholder="https://web.freshchat.com/..../conversation/14..."
+          name="freshChatUri">
+        <div class="invalid-feedback">
+          Valid Fresh Chat Uri is required.
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 mb-3 form-group">
+        <label for="supportTopic">Support Topic</label>
+        <select class="form-control" id="supportTopic" [(ngModel)]="feedbackObject.SupportTopic" name="supportTopic">
+          <option value="" disabled selected>---- Select Support Topic ---- </option>
+          <option>Web App Down </option>
+          <option>Web app Slow</option>
+          <option>Web app restart</option>
+        </select>
+      </div>
+      <div class="col-md-6 mb-3 form-group">
+        <label for="problemDescription">Problem Description</label>
+        <textarea class="form-control" [(ngModel)]="feedbackObject.Problem" rows="5" id="problemDescription" name="problemDescription"></textarea>
+        <div class="invalid-feedback">
+          Valid problem description is required.
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 mb-3 form-group">
+        <label>Case Deflected?</label>
+        <div>
+          <div class="form-check form-check-inline">
+            <label class="form-check-label">
+              <input [(ngModel)]="feedbackObject.Deflected" type="radio" class="form-check-input" name="optradio" value="Y">Yes
+            </label>
+          </div>
+          <div class="form-check form-check-inline">
+            <label class="form-check-label">
+              <input [(ngModel)]="feedbackObject.Deflected" type="radio" class="form-check-input" name="optradio" value="N">No
+            </label>
+          </div>
+        </div>
+      </div>
+      <div *ngIf="feedbackObject.Deflected === 'Y'" class="col-md-6 mb-3 form-group">
+        <label for="problemResolution">Resolution</label>
+        <textarea class="form-control" rows="5" id="problemResolution"></textarea>
+        <div class="invalid-feedback">
+          Valid Resolution description is required.
+        </div>
+      </div>
+    </div>
+
+    <div class="row form-group" *ngIf="feedbackObject.Deflected === 'Y'">
+      <div class="col-md-6 mb-3 form-group">
+        <label for="detectors">Detectors That Helped</label>
+        
+        <ng-multiselect-dropdown
+          [placeholder]="'Select Detectors'"
+          [data]="detectorsList"
+          [(ngModel)]="selectedDetectors"
+          [settings]="dropdownSettings" name="detectors"
+        >
+        </ng-multiselect-dropdown>
+
+      </div>
+      <div class="col-md-6 mb-3 form-group">
+        <label for="blogs">Blogs Links/Self Help Docs That Helped (comma separated)</label>
+        <textarea [(ngModel)]="feedbackObject.DocsHelped" class="form-control" rows="5" id="blogs" name="detectors"></textarea>
+      </div>
+    </div>
+
+    <div class="row form-group" *ngIf="feedbackObject.Deflected === 'N'">
+        <div class="col-md-6 mb-3 form-group">
+          <label for="detectors">Case Leaked Reason</label>
+          <select [(ngModel)]="feedbackObject.WhyLeaked" class="form-control" id="caseLeakedReason" name="caseLeakedReason">
+            <option value="" disabled selected>---- Select Reason ---- </option>
+            <option>Customer didn't respond</option>
+            <option>Tooling/Knowledge improvement</option>
+            <option>Chat Helped but case still opened</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="col-md-6 mb-3 form-group">
+          <label for="blogs">Improvements For Next Time</label>
+          <textarea [(ngModel)]="feedbackObject.Improvements" class="form-control" rows="5" id="improvements" name="improvements"></textarea>
+        </div>
+      </div>
+
+    <div class="row form-group" *ngIf="feedbackObject.Deflected !== ''">
+        <div class="col-md-6 mb-3 form-group">
+            <label for="csat">CSAT (if given)</label>
+            <select [(ngModel)]="feedbackObject.CSAT" class="form-control" id="csat" name="csat">
+              <option value="0">N/A</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+          <div class="col-md-6 mb-3 form-group">
+              <label for="additionalComments">Additional Comments</label>
+              <textarea  [(ngModel)]="feedbackObject.OtherRemarks" class="form-control" rows="2" id="additionalComments" name="additionalComments"></textarea>
+          </div>
+    </div>
+
+    <div class="center-block text-center" style="margin-top:30px;margin-bottom:30px">
+        <button (click)="OnSubmit()" type="button" class="btn btn-primary btn-lg  bg-freshchat border-freshchat" style="width: 400px">
+            Submit Feedback
+        </button>
+        <p style="color:grey;font-style:italic">(shgup@microsoft.com)</p>
+  </div>
+  </form>
+</div>
