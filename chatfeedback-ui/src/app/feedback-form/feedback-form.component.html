@@ -1,3 +1,9 @@
+<div style="padding-top:40px">
+  <div *ngIf="showAlert" class="{{alertClass}}" role="alert">
+    <h5>{{alertMessage}}</h5>
+  </div>
+</div>
+
 <div style="padding-bottom:50px">
 
   <div class="py-3 text-center">
@@ -17,17 +23,16 @@
     <div class="row">
       <div class="col-md-6 mb-3 form-group">
         <label for="Date">Date (YYYY-MM-DD)</label>
-        <input type="text" [(ngModel)]="feedbackObject.TimeStamp" class="form-control" id="Date" placeholder="YYYY-MM-DD" name="date" required>
-        <div class="invalid-feedback">
-          Invalid Date. Valid date format : YYYY-MM-DD
+        <input type="text" [(ngModel)]="feedbackObject.TimeStamp" class="form-control" [ngClass]="{'invalid': errorObject.TimeStampError}"
+          id="Date" placeholder="YYYY-MM-DD" name="date" required>
+        <div *ngIf="errorObject.TimeStampError" class="invalid-state">
+          {{errorObject.TimeStampError}}
         </div>
       </div>
       <div class="col-md-6 mb-3 form-group">
         <label for="product">Product</label>
         <select class="form-control" id="product" [(ngModel)]="feedbackObject.Product" name="product" placeholder="Select Product">
-          <option>Azure Web App (Windows)</option>
-          <option>Azure Web App (Linux)</option>
-          <option>Azure Kubernetes Service</option>
+          <option *ngFor="let key of productList">{{ key }}</option>
         </select>
       </div>
     </div>
@@ -35,18 +40,18 @@
     <div class="row">
       <div class="col-md-6 mb-3 form-group">
         <label for="resourceUri">Azure Resource Uri</label>
-        <input type="text"  [(ngModel)]="feedbackObject.ResourceURI" class="form-control" id="resourceUri" placeholder="/subscriptions/1402b..../resourceGroups/..."
-          name="resourceUri">
-        <div class="invalid-feedback">
-          Valid Resoiurce Uri is required.
+        <input type="text" [(ngModel)]="feedbackObject.ResourceURI" class="form-control" [ngClass]="{'invalid': errorObject.ResourceURIError}"
+          id="resourceUri" placeholder="/subscriptions/1402b..../resourceGroups/..." name="resourceUri">
+        <div *ngIf="errorObject.ResourceURIError" class="invalid-state">
+          {{errorObject.ResourceURIError}}
         </div>
       </div>
       <div class="col-md-6 mb-3 form-group">
         <label for="freshChatUri">Fresh Chat Uri</label>
-        <input type="text" [(ngModel)]="feedbackObject.ChatURL" class="form-control" id="freshChatUri" placeholder="https://web.freshchat.com/..../conversation/14..."
-          name="freshChatUri">
-        <div class="invalid-feedback">
-          Valid Fresh Chat Uri is required.
+        <input type="text" [(ngModel)]="feedbackObject.ChatURL" class="form-control" [ngClass]="{'invalid': errorObject.FreshChatUrlError}"
+          id="freshChatUri" placeholder="https://web.freshchat.com/..../conversation/14..." name="freshChatUri">
+        <div *ngIf="errorObject.FreshChatUrlError" class="invalid-state">
+          {{errorObject.FreshChatUrlError}}
         </div>
       </div>
     </div>
@@ -54,18 +59,21 @@
     <div class="row">
       <div class="col-md-6 mb-3 form-group">
         <label for="supportTopic">Support Topic</label>
-        <select class="form-control" id="supportTopic" [(ngModel)]="feedbackObject.SupportTopic" name="supportTopic">
+        <select class="form-control" id="supportTopic" [(ngModel)]="feedbackObject.SupportTopic" [ngClass]="{'invalid': errorObject.supportTopicError}" name="supportTopic">
           <option value="" disabled selected>---- Select Support Topic ---- </option>
-          <option>Web App Down </option>
-          <option>Web app Slow</option>
-          <option>Web app restart</option>
+          <option *ngFor="let topicObj of productService.productInfo[feedbackObject.Product].supportTopics">{{topicObj.id}}
+            - {{topicObj.name}}</option>
         </select>
+        <div *ngIf="errorObject.supportTopicError" class="invalid-state">
+            {{errorObject.supportTopicError}}
+          </div>
       </div>
       <div class="col-md-6 mb-3 form-group">
         <label for="problemDescription">Problem Description</label>
-        <textarea class="form-control" [(ngModel)]="feedbackObject.Problem" rows="5" id="problemDescription" name="problemDescription"></textarea>
-        <div class="invalid-feedback">
-          Valid problem description is required.
+        <textarea class="form-control" [ngClass]="{'invalid': errorObject.ProblemError}" [(ngModel)]="feedbackObject.Problem"
+          rows="5" id="problemDescription" name="problemDescription"></textarea>
+        <div *ngIf="errorObject.ProblemError" class="invalid-state">
+          {{errorObject.ProblemError}}
         </div>
       </div>
     </div>
@@ -85,12 +93,19 @@
             </label>
           </div>
         </div>
+
+        <div *ngIf="errorObject.CaseDeflectedError" class="invalid-state">
+          {{errorObject.CaseDeflectedError}}
+        </div>
       </div>
+
       <div *ngIf="feedbackObject.Deflected === 'Y'" class="col-md-6 mb-3 form-group">
+
         <label for="problemResolution">Resolution</label>
-        <textarea class="form-control" rows="5" id="problemResolution"></textarea>
-        <div class="invalid-feedback">
-          Valid Resolution description is required.
+        <textarea [(ngModel)]="feedbackObject.Resolution" class="form-control" rows="5" [ngClass]="{'invalid': errorObject.ResolutionError}"
+          id="problemResolution"  name="problemResolution"></textarea>
+        <div *ngIf="errorObject.ResolutionError" class="invalid-state">
+          {{errorObject.ResolutionError}}
         </div>
       </div>
     </div>
@@ -98,13 +113,9 @@
     <div class="row form-group" *ngIf="feedbackObject.Deflected === 'Y'">
       <div class="col-md-6 mb-3 form-group">
         <label for="detectors">Detectors That Helped</label>
-        
-        <ng-multiselect-dropdown
-          [placeholder]="'Select Detectors'"
-          [data]="detectorsList"
-          [(ngModel)]="selectedDetectors"
-          [settings]="dropdownSettings" name="detectors"
-        >
+
+        <ng-multiselect-dropdown [placeholder]="'Select Detectors'" [data]="productService.productInfo[feedbackObject.Product].detectors"
+          [(ngModel)]="selectedDetectors" [settings]="dropdownSettings" name="detectors">
         </ng-multiselect-dropdown>
 
       </div>
@@ -115,45 +126,50 @@
     </div>
 
     <div class="row form-group" *ngIf="feedbackObject.Deflected === 'N'">
-        <div class="col-md-6 mb-3 form-group">
-          <label for="detectors">Case Leaked Reason</label>
-          <select [(ngModel)]="feedbackObject.WhyLeaked" class="form-control" id="caseLeakedReason" name="caseLeakedReason">
-            <option value="" disabled selected>---- Select Reason ---- </option>
-            <option>Customer didn't respond</option>
-            <option>Tooling/Knowledge improvement</option>
-            <option>Chat Helped but case still opened</option>
-            <option>Other</option>
-          </select>
-        </div>
-        <div class="col-md-6 mb-3 form-group">
-          <label for="blogs">Improvements For Next Time</label>
-          <textarea [(ngModel)]="feedbackObject.Improvements" class="form-control" rows="5" id="improvements" name="improvements"></textarea>
-        </div>
+      <div class="col-md-6 mb-3 form-group">
+        <label for="detectors">Case Leaked Reason</label>
+        <select [(ngModel)]="feedbackObject.WhyLeaked" [ngClass]="{'invalid': errorObject.WhyLeakedError}" class="form-control" id="caseLeakedReason" name="caseLeakedReason">
+          <option value="" disabled selected>---- Select Reason ---- </option>
+          <option>Customer didn't respond</option>
+          <option>Tooling/Knowledge improvement</option>
+          <option>Chat Helped but case still opened</option>
+          <option>Other</option>
+        </select>
+        <div *ngIf="errorObject.WhyLeakedError" class="invalid-state">
+            {{errorObject.WhyLeakedError}}
+          </div>
       </div>
+      <div class="col-md-6 mb-3 form-group">
+        <label for="blogs">Improvements For Next Time</label>
+        <textarea [(ngModel)]="feedbackObject.Improvements" class="form-control" rows="5" id="improvements" name="improvements"></textarea>
+      </div>
+    </div>
 
     <div class="row form-group" *ngIf="feedbackObject.Deflected !== ''">
-        <div class="col-md-6 mb-3 form-group">
-            <label for="csat">CSAT (if given)</label>
-            <select [(ngModel)]="feedbackObject.CSAT" class="form-control" id="csat" name="csat">
-              <option value="0">N/A</option>
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-            </select>
-          </div>
-          <div class="col-md-6 mb-3 form-group">
-              <label for="additionalComments">Additional Comments</label>
-              <textarea  [(ngModel)]="feedbackObject.OtherRemarks" class="form-control" rows="2" id="additionalComments" name="additionalComments"></textarea>
-          </div>
+      <div class="col-md-6 mb-3 form-group">
+        <label for="csat">CSAT (if given)</label>
+        <select [(ngModel)]="feedbackObject.CSAT" class="form-control" id="csat" name="csat">
+          <option value="0">N/A</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+      </div>
+      <div class="col-md-6 mb-3 form-group">
+        <label for="additionalComments">Additional Comments</label>
+        <textarea [(ngModel)]="feedbackObject.OtherRemarks" class="form-control" rows="2" id="additionalComments" name="additionalComments"></textarea>
+      </div>
     </div>
 
     <div class="center-block text-center" style="margin-top:30px;margin-bottom:30px">
-        <button (click)="OnSubmit()" type="button" class="btn btn-primary btn-lg  bg-freshchat border-freshchat" style="width: 400px">
-            Submit Feedback
-        </button>
-        <p style="color:grey;font-style:italic">(shgup@microsoft.com)</p>
-  </div>
+      <button (click)="OnSubmit()" type="button" class="btn btn-primary btn-lg  bg-freshchat border-freshchat" style="width: 400px"
+        [disabled]="(userService.userProfile.email === '') || submitButtonDisabled">
+        Submit Feedback
+      </button>
+      <p *ngIf="userService.userProfile.email !== ''" style="color:grey;font-style:italic">({{userService.userProfile.email}})</p>
+      <p *ngIf="userService.userProfile.email === ''" style="color:red;font-style:italic">(Unable to get user profile)</p>
+    </div>
   </form>
 </div>

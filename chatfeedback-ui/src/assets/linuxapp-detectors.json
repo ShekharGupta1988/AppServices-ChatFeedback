@@ -1,0 +1,1741 @@
+[
+    {
+        "metadata": {
+            "id": "AlwaysOnCheckForBestPractice",
+            "name": "AlwaysOn Check",
+            "description": "Checks to see if AlwaysOn is enabled or not.",
+            "author": "nmallick",
+            "category": null,
+            "supportTopicList": [],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "AppServiceAdvisorRecommendations",
+            "name": "App Service Advisor Recommendations",
+            "description": "Displays the AppService Advisor recommendation.",
+            "author": "nmallick",
+            "category": null,
+            "supportTopicList": [],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "LinuxLogViewer",
+            "name": "Application Logs",
+            "description": "Check the summary of your latest logs. This allows you to view the relevant logs from your app, and highlights the specific text in the logs that might be a potential issue.",
+            "author": "mikono",
+            "category": "Availability and Performance",
+            "supportTopicList": [],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "appsettings",
+            "name": "AppSettings",
+            "description": "This detector just shows non sensitive app settings configured on the site",
+            "author": "puneetg",
+            "category": null,
+            "supportTopicList": [],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "ARRAffinityCheck",
+            "name": "ARR Affinity Check",
+            "description": "Checks to see if the site has ARRAffinity configured.",
+            "author": "nmallick",
+            "category": null,
+            "supportTopicList": [],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "AuthenticationandAuthorizationV2",
+            "name": "Authentication and Authorization V2",
+            "description": "Detector for results of EasyAuth requests",
+            "author": "jebrook,patob",
+            "category": null,
+            "supportTopicList": [],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "ParentAvailabilityAndPerformance",
+            "name": "Best Practices for Availability, Performance",
+            "description": "Parent Detector for Availability and Performance Best Practices Check.To be used as a child detector within Best Practices Analyzer.",
+            "author": "nmallick",
+            "category": "Best Practices",
+            "supportTopicList": [],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "ParentConfigurationManagement",
+            "name": "Best Practices for Optimal Configuration",
+            "description": "Parent Detector for Configuration and Management Best Practices Check.To be used as a child detector within Best Practices Analyzer.",
+            "author": "nmallick",
+            "category": "Best Practices",
+            "supportTopicList": [],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "CustomDomainAndSSL",
+            "name": "Binding & SSL Configuration",
+            "description": "Analyze the DNS and Server Certificate configured on a site and detect possible misconfigurations",
+            "author": "nmallick",
+            "category": "SSL and Domains",
+            "supportTopicList": [],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "ReadOnly state",
+            "name": "Canary R/O state",
+            "description": "Hello Hackathon",
+            "author": "anikshen",
+            "category": "Hackathon",
+            "supportTopicList": [],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "CapacityIssue",
+            "name": "Capacity Issue",
+            "description": "This will detect any capacity issues that your Linux or containerized app is facing.",
+            "author": "ranjithr",
+            "category": null,
+            "supportTopicList": [],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "CertificateBindingOperations",
+            "name": "Certificate Binding Operations",
+            "description": "This view shows SSL certificate binding operations and their results.",
+            "author": "Madhbh;anilpras",
+            "category": "SSL and Domains",
+            "supportTopicList": [],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "certificatedeleteoperations",
+            "name": "Certificate Delete Operations",
+            "description": "This view shows all the certificate delete operations and identifies successful vs. failed operations",
+            "author": "puneetg,anilpras",
+            "category": "SSL and Domains",
+            "supportTopicList": [],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "certificateuploadoperations",
+            "name": "Certificate Upload Operations",
+            "description": "Shows all the SSL Certificate Upload Success and Failure operations",
+            "author": "Madhbh,anilpras",
+            "category": "SSL and Domains",
+            "supportTopicList": [],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "certsLoadedToWorker",
+            "name": "Certs loaded to the Worker",
+            "description": "Detector for certs loaded into the worker instance, available for use by the application.",
+            "author": "patob",
+            "category": "SSL",
+            "supportTopicList": [],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "backupFailures",
+            "name": "Check Backup Failures",
+            "description": "Analyzes backup operations for Web App (Windows) & (Linux).",
+            "author": "pbabut",
+            "category": "Configuration and Management",
+            "supportTopicList": [
+                {
+                    "id": "32542208",
+                    "pesId": "14748",
+                    "typeId": "Diagnostics.ModelsAndUtils.Attributes.SupportTopic, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+                },
+                {
+                    "id": "32589276",
+                    "pesId": "14748",
+                    "typeId": "Diagnostics.ModelsAndUtils.Attributes.SupportTopic, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+                }
+            ],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "bestpracticesuggestions",
+            "name": "Check Best Practices for Prod Apps",
+            "description": "Evaluating this web application to determine if it follows the best practices for enhanced stability and reliability.",
+            "author": "nmallick",
+            "category": null,
+            "supportTopicList": [],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "FrontendHealthDetector",
+            "name": "Check Frontend Instance Health",
+            "description": "",
+            "author": "xinjin",
+            "category": "Availability and Performance",
+            "supportTopicList": [],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "SNATPortExhaustionChecker",
+            "name": "Check SNAT Port Exhaustion",
+            "description": "",
+            "author": "xinjin",
+            "category": "Availability and Performance",
+            "supportTopicList": [],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "swap",
+            "name": "Check Swap Operations",
+            "description": "Checks for deployment slot swap operations and reasons why they failed",
+            "author": "puneetg",
+            "category": "Configuration and Management",
+            "supportTopicList": [
+                {
+                    "id": "32581615",
+                    "pesId": "14748",
+                    "typeId": "Diagnostics.ModelsAndUtils.Attributes.SupportTopic, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+                },
+                {
+                    "id": "32581615",
+                    "pesId": "16170",
+                    "typeId": "Diagnostics.ModelsAndUtils.Attributes.SupportTopic, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+                },
+                {
+                    "id": "32581615",
+                    "pesId": "16333",
+                    "typeId": "Diagnostics.ModelsAndUtils.Attributes.SupportTopic, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+                }
+            ],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "LinuxContainerStartFailure",
+            "name": "Container Issues",
+            "description": "Investigate potential reasons why your container failed to start, which could cause deployment and availability issues.",
+            "author": "mikono",
+            "category": "Availability and Performance",
+            "supportTopicList": [],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "LinuxCpuPercentage",
+            "name": "CPU Usage",
+            "description": "This shows the average CPU percentage consumed by your app per instance.",
+            "author": "mikono",
+            "category": "Availability and Performance",
+            "supportTopicList": [
+                {
+                    "id": "32583701",
+                    "pesId": "16170",
+                    "typeId": "Diagnostics.ModelsAndUtils.Attributes.SupportTopic, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+                },
+                {
+                    "id": "32583701",
+                    "pesId": "16333",
+                    "typeId": "Diagnostics.ModelsAndUtils.Attributes.SupportTopic, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+                }
+            ],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "CreateOrDeleteoperations",
+            "name": "Create/Delete Operations",
+            "description": "Enlits all the WebApp / Server farm CREATE or DELETE activity performed by the user on this subscription.",
+            "author": "Sunny, Vineet, Kaushal",
+            "category": null,
+            "supportTopicList": [],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "CustomDomainAddFailureOnPortal",
+            "name": "Custom Domain Add Operations",
+            "description": "Checks any attempts to add a custom domain via the Azure Portal, lists the domains that failed to add to the site, and recommends actions to take to rectify the issue.",
+            "author": "nmallick",
+            "category": "SSL and Domains",
+            "supportTopicList": [],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "undelete",
+            "name": "Deleted Web Apps",
+            "description": "Restore a deleted web application that was accidentally deleted.",
+            "author": "nmallick",
+            "category": null,
+            "supportTopicList": [],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "AzureServiceManagementAPIUsage",
+            "name": "Deprecating APIs",
+            "description": "Determines if there have been any calls to soon to be deprecated APIs for the web app or associated resources.",
+            "author": "naveeda",
+            "category": "Configuration and Management",
+            "supportTopicList": [],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "DiffStatusFEW",
+            "name": "Difference in Status",
+            "description": "Detector for finding differences between the HTTP status returned by the Worker and the FrontEnd role. This will usually indicate that either the worker was not reachable or that the 230s limit was hit.",
+            "author": "pepopesc",
+            "category": null,
+            "supportTopicList": [],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "VerifyMultiInstanceWebApp",
+            "name": "Distributing Web App",
+            "description": "Checks to see if the webapp runs on more than one instance.",
+            "author": "nmallick",
+            "category": null,
+            "supportTopicList": [],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "DynamicIpSecurity",
+            "name": "Dynamic IP Restriction Count",
+            "description": "Using dynamic IP restrictions means the administrator can configure the system so that it blocks any IP address that meets the set criteria",
+            "author": "juzhu; anikshen",
+            "category": "Hackathon",
+            "supportTopicList": [],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "FrontendCpuMemoryDetector",
+            "name": "Frontend Instance CPU & Memory",
+            "description": "",
+            "author": "xinjin",
+            "category": "Availability and Performance",
+            "supportTopicList": [],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "FrontendThrottlingDetector",
+            "name": "Frontend Throttling Detector",
+            "description": "",
+            "author": "xinjin",
+            "category": "Availability and Performance",
+            "supportTopicList": [],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "workervsfrontend",
+            "name": "Frontend vs Worker",
+            "description": "Detector for scenarios where the Worker Status is different than the FrontEnd Status",
+            "author": "pepopesc",
+            "category": "Hackathon",
+            "supportTopicList": [],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "LinuxSiteStoppedExcessiveSwap",
+            "name": "High Swap Usage for Linux Web Apps",
+            "description": "This detector finds any events indicating high swap memory usage",
+            "author": "ericsten",
+            "category": "Hackathon",
+            "supportTopicList": [],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "hackathonexample",
+            "name": "How to Add UI to Detector",
+            "description": "How to control UI renderings for your detector",
+            "author": "hawfor",
+            "category": "Hackathon",
+            "supportTopicList": [],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "HttpLoggingSetting",
+            "name": "Http Log Setting",
+            "description": "Check if HTTP/application logging is turned on for better troubleshooting.",
+            "author": "mikono",
+            "category": null,
+            "supportTopicList": [],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "inaccessiblecerts",
+            "name": "Inaccessible Certificates",
+            "description": "Shows all certs that cannot be bound to any web app.",
+            "author": "anilpras,madhbh,puneetg,nmallick",
+            "category": "SSL and Domains",
+            "supportTopicList": [],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "instanceallocations",
+            "name": "Instance Allocations Event",
+            "description": "This experimental view helps you identify if your worker instances were moved during this time.",
+            "author": "xinjin",
+            "category": "Availability and Performance",
+            "supportTopicList": [],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "Brazil_IP_Change",
+            "name": "IP Address Deprecation",
+            "description": "Checks if you are impacted by the recent IP release activity and suggests actions to take if not already done",
+            "author": "nmallick",
+            "category": null,
+            "supportTopicList": [],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "LinuxAntaresVersion",
+            "name": "Linux Antares Version",
+            "description": "Shows Antares Version and instances the web app is/was running in the timeframe choosen",
+            "author": "srsuredd",
+            "category": "Hackathon",
+            "supportTopicList": [],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "rhl_linuxversion",
+            "name": "Linux BuildVersion",
+            "description": "Shows information for web app for Linux build version on earch instance",
+            "author": "hanren",
+            "category": null,
+            "supportTopicList": [],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "LinuxCD",
+            "name": "Linux Continuous Deployment Detector",
+            "description": "Detects if Continuous Deployment (CD) has been triggered for the Web App Selected. This is specifically applicable to Web App for Containers.",
+            "author": "srsuredd",
+            "category": "Hackathon",
+            "supportTopicList": [],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "LinuxObserverInfo",
+            "name": "Linux Current Observer Information",
+            "description": "Shows current observer information for this linux web app",
+            "author": "srsuredd",
+            "category": "Hackathon",
+            "supportTopicList": [],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "LinuxDockerPullFailures",
+            "name": "Linux docker pull exceptions",
+            "description": "This detector checks if the site failed to start due to exceptions while pulling the configured docker image.",
+            "author": "ericsten",
+            "category": "Hackathon",
+            "supportTopicList": [],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "LinuxLoadAvg",
+            "name": "Linux Load Average",
+            "description": "Detects if host has high load average in the timeframe chosen",
+            "author": "srsuredd",
+            "category": "Hackathon",
+            "supportTopicList": [],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "LinuxOutBoundConnections",
+            "name": "Linux Outbound Connections",
+            "description": "This shows the number of outbound connections on the Linux instances.",
+            "author": "toan",
+            "category": "Hackathon",
+            "supportTopicList": [],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "LinuxPerfDetector",
+            "name": "Linux Performance",
+            "description": "Shows Antares Version, Container Image (Built-in,custom or multi-container config) and Detects if host has high load average or zombie processes or Swap space is exhausted",
+            "author": "srsuredd",
+            "category": "Hackathon",
+            "supportTopicList": [],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "LinuxSwapSpaceLow",
+            "name": "Linux Swap Space Low",
+            "description": "Detects if host has low swap space during the timeframe chosen",
+            "author": "srsuredd",
+            "category": "Hackathon",
+            "supportTopicList": [],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "LinuxBasicWebAppInfo",
+            "name": "Linux Web App Information",
+            "description": "Shows Basic Web App (Linux/Container) Information",
+            "author": "srsuredd",
+            "category": "Hackathon",
+            "supportTopicList": [],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "LinuxAppSlow",
+            "name": "Linux Web App Slow",
+            "description": "Shows Antares Version, Container Image (Built-in,custom or multi-container config) and Detects if host has high load average or zombie processes or Swap space is exhausted",
+            "author": "srsuredd",
+            "category": "Hackathon",
+            "supportTopicList": [],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "LinuxZombieProcesses",
+            "name": "Linux Zombie Processes",
+            "description": "Detects if host has zombie processes during the timeframe chosen",
+            "author": "srsuredd",
+            "category": "Hackathon",
+            "supportTopicList": [],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "LinuxLWASRestarted",
+            "name": "LWAS Restart events",
+            "description": "This detector finds any restart events of LWAS, the platform service running on Linux workers",
+            "author": "mikono",
+            "category": "Docker Containers",
+            "supportTopicList": [],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "managementoperations",
+            "name": "Management Operations",
+            "description": "This detector shows all management operations at the site or the server farm level.",
+            "author": "Sunny, Vineet, Kaushal",
+            "category": null,
+            "supportTopicList": [
+                {
+                    "id": "32542209",
+                    "pesId": "14748",
+                    "typeId": "Diagnostics.ModelsAndUtils.Attributes.SupportTopic, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+                }
+            ],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "LinuxMemoryPercentage",
+            "name": "Memory Usage",
+            "description": "Average memory usage consumed by Linux apps",
+            "author": "mikono",
+            "category": "Availability and Performance",
+            "supportTopicList": [
+                {
+                    "id": "32581616",
+                    "pesId": "16170",
+                    "typeId": "Diagnostics.ModelsAndUtils.Attributes.SupportTopic, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+                },
+                {
+                    "id": "32581616",
+                    "pesId": "16333",
+                    "typeId": "Diagnostics.ModelsAndUtils.Attributes.SupportTopic, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+                }
+            ],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "Migration",
+            "name": "Migration Operations",
+            "description": "Analyze failed migration operations of a subscription in a given time frame",
+            "author": "marashid",
+            "category": "Configuration and Management",
+            "supportTopicList": [
+                {
+                    "id": "32581619",
+                    "pesId": "14748",
+                    "typeId": "Diagnostics.ModelsAndUtils.Attributes.SupportTopic, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+                }
+            ],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "mismatchedcertificate",
+            "name": "Mismatched Certificates",
+            "description": "Mismatched certificate",
+            "author": "v-jelu",
+            "category": "SSL",
+            "supportTopicList": [],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "newdetectorunique",
+            "name": "NewDetectorUnique",
+            "description": "",
+            "author": "sanmeht",
+            "category": null,
+            "supportTopicList": [],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "upgrades",
+            "name": "Platform Upgrades",
+            "description": "This detector is used to see upgrades running on Stamp",
+            "author": "sasetti",
+            "category": "Hackathon",
+            "supportTopicList": [],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "LinuxPortUsage",
+            "name": "Port Usage",
+            "description": "This shows the socket usage by the Linux instances.",
+            "author": "mikono",
+            "category": "Availability and Performance",
+            "supportTopicList": [],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "LinuxProcessFullList",
+            "name": "Process Full List",
+            "description": "This shows the list of all the processes running in your Linux instances.",
+            "author": "mikono",
+            "category": "Availability and Performance",
+            "supportTopicList": [],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "LinuxProcessList",
+            "name": "Process List",
+            "description": "This shows the list of all the processes running in your Linux instances.",
+            "author": "mikono",
+            "category": "Availability and Performance",
+            "supportTopicList": [],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "SKUCheckForApp",
+            "name": "Production SKU used",
+            "description": "Checks to see if the webapp is running on a SKU that is appropriate to host production workload.",
+            "author": "nmallick",
+            "category": null,
+            "supportTopicList": [],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "ranjith",
+            "name": "ranjith",
+            "description": "",
+            "author": "ranjithr",
+            "category": null,
+            "supportTopicList": [],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "Recommendations",
+            "name": "Recommendations",
+            "description": "List of recommendations for app",
+            "author": "mikono",
+            "category": null,
+            "supportTopicList": [],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "testdetector",
+            "name": "Rekha's test detector",
+            "description": "",
+            "author": "reswamin",
+            "category": null,
+            "supportTopicList": [],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "Requests Per Instance",
+            "name": "Requests Per Instance",
+            "description": "Lists Instances and the requests for each during the specified timeframe",
+            "author": "Terrella",
+            "category": null,
+            "supportTopicList": [],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "configuringsslandcustomdomains",
+            "name": "Run All Certificates & Domains checks",
+            "description": "Using this view you can diagnose Certificate and Custom Domain configuration for your App",
+            "author": "puneetg",
+            "category": "SSL and Domains",
+            "supportTopicList": [
+                {
+                    "id": "32440123",
+                    "pesId": "14748",
+                    "typeId": "Diagnostics.ModelsAndUtils.Attributes.SupportTopic, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+                },
+                {
+                    "id": "32589277",
+                    "pesId": "14748",
+                    "typeId": "Diagnostics.ModelsAndUtils.Attributes.SupportTopic, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+                },
+                {
+                    "id": "32440122",
+                    "pesId": "14748",
+                    "typeId": "Diagnostics.ModelsAndUtils.Attributes.SupportTopic, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+                },
+                {
+                    "id": "32440123",
+                    "pesId": "16170",
+                    "typeId": "Diagnostics.ModelsAndUtils.Attributes.SupportTopic, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+                },
+                {
+                    "id": "32589277",
+                    "pesId": "16170",
+                    "typeId": "Diagnostics.ModelsAndUtils.Attributes.SupportTopic, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+                },
+                {
+                    "id": "32440122",
+                    "pesId": "16170",
+                    "typeId": "Diagnostics.ModelsAndUtils.Attributes.SupportTopic, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+                },
+                {
+                    "id": "32440123",
+                    "pesId": "16333",
+                    "typeId": "Diagnostics.ModelsAndUtils.Attributes.SupportTopic, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+                },
+                {
+                    "id": "32589277",
+                    "pesId": "16333",
+                    "typeId": "Diagnostics.ModelsAndUtils.Attributes.SupportTopic, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+                },
+                {
+                    "id": "32440122",
+                    "pesId": "16333",
+                    "typeId": "Diagnostics.ModelsAndUtils.Attributes.SupportTopic, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+                }
+            ],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "sample",
+            "name": "Sample Detector",
+            "description": "This is a sample detector",
+            "author": "applensv2",
+            "category": null,
+            "supportTopicList": [],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "ScaleCapacityCheck",
+            "name": "Scale Capacity Check",
+            "description": "Checks to see if App Service Plan hosting the webapp has capacity to accomodate potential scaleout operation.",
+            "author": "nmallick",
+            "category": null,
+            "supportTopicList": [],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "autoscalingoperations",
+            "name": "Scaling Operations",
+            "description": "Find out all Manual and AutoScaling operations for the web app",
+            "author": "puneetg,curibe",
+            "category": "Configuration and Management",
+            "supportTopicList": [
+                {
+                    "id": "32542211",
+                    "pesId": "14748",
+                    "typeId": "Diagnostics.ModelsAndUtils.Attributes.SupportTopic, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+                },
+                {
+                    "id": "32542211",
+                    "pesId": "16170",
+                    "typeId": "Diagnostics.ModelsAndUtils.Attributes.SupportTopic, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+                },
+                {
+                    "id": "32542211",
+                    "pesId": "16333",
+                    "typeId": "Diagnostics.ModelsAndUtils.Attributes.SupportTopic, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+                },
+                {
+                    "id": "32589283",
+                    "pesId": "14748",
+                    "typeId": "Diagnostics.ModelsAndUtils.Attributes.SupportTopic, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+                }
+            ],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "serverfarmmanagementoperations",
+            "name": "ServerFarm Management Operations",
+            "description": "Enlits all the management operations that were performed for the App Service Plan for this Web App.",
+            "author": "Sunny, Vineet, Kaushal",
+            "category": null,
+            "supportTopicList": [],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "sitemanagementoperations",
+            "name": "Site Management Operations",
+            "description": "Checks all management operations for the site",
+            "author": "Sunny, Vineet, Kaushal",
+            "category": null,
+            "supportTopicList": [],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "SNAT Port Exhaustion",
+            "name": "SNAT Port Exhaustion",
+            "description": "Find if there is SNAT Port Exhaustion for Web App VIP",
+            "author": "mofasiul",
+            "category": null,
+            "supportTopicList": [],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "app_subscriptioninfo",
+            "name": "Subscription Info",
+            "description": "Information about the subscription.",
+            "author": "shgup",
+            "category": null,
+            "supportTopicList": [],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "supportcasehistory",
+            "name": "Support Cases History",
+            "description": "List of all the support cases opened for this resource in last 30 days.",
+            "author": "shgup",
+            "category": null,
+            "supportTopicList": [],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "LinuxTcpStates",
+            "name": "TCP State History for Linux Apps",
+            "description": "This shows the history of TCP socket states in your Linux instances.",
+            "author": "mikono",
+            "category": "Availability and Performance",
+            "supportTopicList": [],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "GeoThrottledApis",
+            "name": "Throttled Management Apis",
+            "description": "Checks if any of the Management API are throttled on Subscription",
+            "author": "pvbchak",
+            "category": "Configuration and Management",
+            "supportTopicList": [],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "DeploymentSlotCheck",
+            "name": "Using Deployment Slots",
+            "description": "Checks to see if the site has deployment slots configured.",
+            "author": "nmallick",
+            "category": null,
+            "supportTopicList": [],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "TMUtilization",
+            "name": "Utilizing Azure Traffic Manager",
+            "description": "Checks to see if the site is utilizing Traffic Manager.",
+            "author": "nmallick",
+            "category": null,
+            "supportTopicList": [],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "buildversionheartbeats",
+            "name": "Version Heartbeats",
+            "description": "Display the build version of worker instances. Check if there were platform upgrade events.",
+            "author": "xinjin",
+            "category": null,
+            "supportTopicList": [],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "LinuxAppDown",
+            "name": "Web App Down",
+            "description": "Investigate common issues with Linux and containerized apps that are having availability issues or experiencing downtime.",
+            "author": "mikono",
+            "category": "Availability and Performance",
+            "supportTopicList": [
+                {
+                    "id": "32542218",
+                    "pesId": "16170",
+                    "typeId": "Diagnostics.ModelsAndUtils.Attributes.SupportTopic, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+                },
+                {
+                    "id": "32542218",
+                    "pesId": "16333",
+                    "typeId": "Diagnostics.ModelsAndUtils.Attributes.SupportTopic, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+                },
+                {
+                    "id": "32440119",
+                    "pesId": "16170",
+                    "typeId": "Diagnostics.ModelsAndUtils.Attributes.SupportTopic, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+                },
+                {
+                    "id": "32440119",
+                    "pesId": "16333",
+                    "typeId": "Diagnostics.ModelsAndUtils.Attributes.SupportTopic, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+                },
+                {
+                    "id": "32457411",
+                    "pesId": "16170",
+                    "typeId": "Diagnostics.ModelsAndUtils.Attributes.SupportTopic, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+                },
+                {
+                    "id": "32457411",
+                    "pesId": "16333",
+                    "typeId": "Diagnostics.ModelsAndUtils.Attributes.SupportTopic, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+                },
+                {
+                    "id": "32562497",
+                    "pesId": "16333",
+                    "typeId": "Diagnostics.ModelsAndUtils.Attributes.SupportTopic, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+                },
+                {
+                    "id": "32588775",
+                    "pesId": "16333",
+                    "typeId": "Diagnostics.ModelsAndUtils.Attributes.SupportTopic, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+                },
+                {
+                    "id": "32606472",
+                    "pesId": "16333",
+                    "typeId": "Diagnostics.ModelsAndUtils.Attributes.SupportTopic, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+                }
+            ],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "linuxInfo",
+            "name": "Web App for Linux Info",
+            "description": "Shows information for web app for linux",
+            "author": "hanren",
+            "category": null,
+            "supportTopicList": [],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "WebAppASEInfo",
+            "name": "Web App in ASE General Info",
+            "description": "Shows ASE web app , plan, worker instance info.",
+            "author": "danzha",
+            "category": "Configuration and Management",
+            "supportTopicList": [],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "LinuxContainerRecycle",
+            "name": "Web App Restarted",
+            "description": "This shows container recycle and stop events for your Linux app.",
+            "author": "mikono",
+            "category": "Availability and Performance",
+            "supportTopicList": [
+                {
+                    "id": "32570954",
+                    "pesId": "16170",
+                    "typeId": "Diagnostics.ModelsAndUtils.Attributes.SupportTopic, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+                },
+                {
+                    "id": "32570954",
+                    "pesId": "16333",
+                    "typeId": "Diagnostics.ModelsAndUtils.Attributes.SupportTopic, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+                }
+            ],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "WebJob Aborts",
+            "name": "WebJob Abort Details",
+            "description": "Finds all Webjob Aborts",
+            "author": "mofasiul",
+            "category": null,
+            "supportTopicList": [],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "WebJobs Details",
+            "name": "WebJob Details",
+            "description": "Finds all Webjob and checks for exceptions and CPU",
+            "author": "Terrella",
+            "category": null,
+            "supportTopicList": [
+                {
+                    "id": "32583701",
+                    "pesId": "14748",
+                    "typeId": "Diagnostics.ModelsAndUtils.Attributes.SupportTopic, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+                },
+                {
+                    "id": "32581616",
+                    "pesId": "14748",
+                    "typeId": "Diagnostics.ModelsAndUtils.Attributes.SupportTopic, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+                },
+                {
+                    "id": "32570954",
+                    "pesId": "14748",
+                    "typeId": "Diagnostics.ModelsAndUtils.Attributes.SupportTopic, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+                },
+                {
+                    "id": "32457411",
+                    "pesId": "14748",
+                    "typeId": "Diagnostics.ModelsAndUtils.Attributes.SupportTopic, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+                },
+                {
+                    "id": "32440119",
+                    "pesId": "14748",
+                    "typeId": "Diagnostics.ModelsAndUtils.Attributes.SupportTopic, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+                },
+                {
+                    "id": "32581620",
+                    "pesId": "14748",
+                    "typeId": "Diagnostics.ModelsAndUtils.Attributes.SupportTopic, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+                },
+                {
+                    "id": "32581606",
+                    "pesId": "14748",
+                    "typeId": "Diagnostics.ModelsAndUtils.Attributes.SupportTopic, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+                },
+                {
+                    "id": "32581611",
+                    "pesId": "14748",
+                    "typeId": "Diagnostics.ModelsAndUtils.Attributes.SupportTopic, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+                }
+            ],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "ipaddressrestrictions",
+            "name": "Which client IPs got rejected due to IP restriction?",
+            "description": "IP addresses rejected due to IP address restrictions configured on the app",
+            "author": "puneetg",
+            "category": "Configuration and Management",
+            "supportTopicList": [],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "WordPressOperations",
+            "name": "WordPress Settings & Operations",
+            "description": "This detector provides information for operations that may affect WordPress Performance/Availability",
+            "author": "toan",
+            "category": "Hackathon",
+            "supportTopicList": [],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "LinuxWorkerAllocation",
+            "name": "Worker Allocation History for Linux app",
+            "description": "Show which workers were assigned",
+            "author": "mikono",
+            "category": "Availability and Performance",
+            "supportTopicList": [],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    },
+    {
+        "metadata": {
+            "id": "linuxWPCheck",
+            "name": "WP Docker Image Check",
+            "description": "Checks Linux Web App Wordpress Image Tag for latest values",
+            "author": "bredwa",
+            "category": "Hackathon",
+            "supportTopicList": [],
+            "typeId": "Diagnostics.ModelsAndUtils.Attributes.Definition, Diagnostics.ModelsAndUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        },
+        "dataset": [],
+        "status": {
+            "message": null,
+            "statusId": 4
+        },
+        "dataProvidersMetadata": null
+    }
+]

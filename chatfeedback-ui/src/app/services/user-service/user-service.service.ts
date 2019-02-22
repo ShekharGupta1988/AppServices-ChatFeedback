@@ -24,8 +24,8 @@ export class UserService {
       let userData = data[0];
       this.userProfile.email = userData["user_id"];
 
-      let claims : {type: string, val: string}[] = userData["user_claims"];
-      let nameClaim = claims.find(p=> p.type === 'name');
+      let claims : {typ: string, val: string}[] = userData["user_claims"];
+      let nameClaim = claims.find(p=> p.typ === 'name');
       if(nameClaim){
         this.userProfile.name = nameClaim.val;
       }

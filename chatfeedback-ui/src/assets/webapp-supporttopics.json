@@ -1,0 +1,58 @@
+[
+    {
+    "id": "32542218",
+    "name": "Availability, Performance, and Application Issues/Web App Down or Reporting errors"
+  },
+  {
+    "id": "32457411",
+    "name": "Availability, Performance, and Application Issues/Web App Slow"
+  },
+  {
+    "id": "32570954",
+    "name": "Availability, Performance, and Application Issues/Web App Restarted"
+  },
+  {
+    "id": "32583701",
+    "name": "Availability, Performance, and Application Issues/Web App experiencing High CPU"
+  },
+  {
+    "id": "32581616",
+    "name": "Availability, Performance, and Application Issues/Web App experiencing High Memory"
+  },
+  {
+    "id": "32440123",
+    "name": "Configuration and Management/Configuring SSL"
+  },
+  {
+    "id": "32440122",
+    "name": "Configuration and Management/Configuring custom domain names"
+  },
+  {
+    "id": "32542210",
+    "name": "Configuration and Management/IP Configuration"
+  },
+  {
+    "id": "32581615",
+    "name": "Configuration and Management/Deployment Slots"
+  },
+  {
+    "id": "32542208",
+    "name": "Configuration and Management/Backup and Restore"
+  },
+  {
+    "id": "32588774",
+    "name": "Deployment/Visual Studio"
+  },
+  {
+    "id": "32589276",
+    "name": "How Do I/Backup and Restore"
+  },
+  {
+    "id": "32589277",
+    "name": "How Do I/Configure domains and certificates"
+  },
+  {
+    "id": "32589281",
+    "name": "How Do I/IP Configuration"
+  }
+]

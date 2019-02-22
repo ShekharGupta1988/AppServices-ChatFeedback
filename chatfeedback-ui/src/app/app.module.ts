@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { FeedbackFormComponent } from './feedback-form/feedback-form.component';
 import { FormService} from './services/form-service/form-service.service';
 import { UserService } from './services/user-service/user-service.service';
+import { ProductService } from './services/product-service/product.service';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { UserService } from './services/user-service/user-service.service';
   ],
   providers: [
     FormService,
-    UserService
+    UserService,
+    ProductService
   ],
   bootstrap: [AppComponent]
 })
