@@ -31,7 +31,7 @@
       </div>
       <div class="col-md-6 mb-3 form-group">
         <label for="product">Product</label>
-        <select class="form-control" id="product" [(ngModel)]="feedbackObject.Product" name="product" placeholder="Select Product">
+        <select class="form-control" id="product" [(ngModel)]="feedbackObject.Product" (change)="onProductSelectionChange($event.target.value)" name="product" placeholder="Select Product">
           <option *ngFor="let key of productList">{{ key }}</option>
         </select>
       </div>

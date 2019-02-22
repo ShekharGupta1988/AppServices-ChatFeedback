@@ -69,6 +69,14 @@ export class FeedbackFormComponent implements OnInit {
     }
   }
 
+  onProductSelectionChange(target: any) : void {
+    this.feedbackObject.SupportTopic = '';
+    this.feedbackObject.DetectorsHelped = '';
+    this.selectedDetectors = [];
+    this.feedbackObject.CSAT = 0;
+    this.feedbackObject.WhyLeaked = '';
+  }
+
   private validateFormModel(): boolean {
 
     var isFormValid: number = 1;
@@ -163,7 +171,7 @@ export class FeedbackFormComponent implements OnInit {
     this.feedbackObject.Product = this.productList[0];
   }
 
-  showSuccessAlertOnPage(): void {
+  private showSuccessAlertOnPage(): void {
     this.showAlert = true;
     this.alertMessage = "Feedback submitted succesfully !";
     this.alertClass = "alert alert-success";
@@ -174,7 +182,7 @@ export class FeedbackFormComponent implements OnInit {
     }, 5000);
   }
 
-  showFailureAlertOnPage(message: string): void {
+  private showFailureAlertOnPage(message: string): void {
     this.showAlert = true;
     this.alertMessage = message;
     this.alertClass = "alert alert-danger";
