@@ -2,5 +2,37 @@
     {
         "id": "32542218",
         "name": "Availability, Performance, and Application Issues/Web App Down or Reporting errors"
+    },
+    {
+        "id": "32457411",
+        "name": "Availability, Performance, and Application Issues/Web App Slow"
+    },
+    {
+        "id": "32570954",
+        "name": "Availability, Performance, and Application Issues/Web App Restarted"
+    },
+    {
+        "id": "32583701",
+        "name": "Availability, Performance, and Application Issues/Web App experiencing High CPU"
+    },
+    {
+        "id": "32581616",
+        "name": "Availability, Performance, and Application Issues/Web App experiencing High Memory"
+    },
+    {
+        "id": "32440123",
+        "name": "Configuration and Management/Configuring SSL"
+    },
+    {
+        "id": "32440122",
+        "name": "Configuration and Management/Configuring custom domain names"
+    },
+    {
+        "id": "32542210",
+        "name": "Configuration and Management/IP Configuration"
+    },
+    {
+        "id": "32542208",
+        "name": "Configuration and Management/Backup and Restore"
     }
 ]
